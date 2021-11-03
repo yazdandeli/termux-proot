@@ -2,6 +2,7 @@
 
 export PATH=/system/bin
 
+rm /system/etc/hosts
 echo "127.0.0.1 localhost $(busybox hostname)" > /system/etc/hosts
 echo "::1 ip6-localhost" >> /system/etc/hosts
 
