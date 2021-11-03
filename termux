@@ -72,7 +72,7 @@ if [ -f "$TERMUX_SANDBOX_PATH/SYMLINKS.txt" ]; then
 fi
 
 ARGS=("proot")
-ARGS+=("--kill-on-exit -r $TERMUX_ANDROID_BASE $TERMUX_SANDBOX_PROOT_OPTIONS")
+ARGS+=("-r $TERMUX_ANDROID_BASE $TERMUX_SANDBOX_PROOT_OPTIONS")
 ARGS+=("-w $TERMUX_SANDBOX_APPPATH/files/home")
 
 # Make sure that some common directory like /home is there.
